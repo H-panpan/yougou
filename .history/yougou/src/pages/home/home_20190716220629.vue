@@ -118,9 +118,10 @@ export default {
   }
 }
 .lunbo{
-  margin-top: 100rpx;
+  padding-top:100rpx;
   width: 100%;
   height: 340rpx;
+  box-sizing: border-box;
   image{
     width: 100%;
     height: 340rpx;

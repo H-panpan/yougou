@@ -25,7 +25,11 @@
    <div class='commodity' v-for="(item,index) in commList" :key="index">
      <img class='new-house' :src="item.floor_title.image_src" alt=""><span class="house-text">{{item.floor_title.name}}</span>
      <div class='commlist'>
-       <img  v-for="(item1,index1) in item.product_list" :key="index1" :src="item1.image_src" alt="">
+       <img src="https://gw.alicdn.com/tfs/TB1hJ2KX6ihSKJjy0FlXXadEXXa-254-318.png" alt="">
+       <img src="https://gma.alicdn.com/bao/uploaded/i4/124093080/O1CN019GqKAn1YcgNC7hIiQ_!!0-saturn_solar.jpg_200x200.jpg_.webp" alt="">
+       <img src="https://gma.alicdn.com/bao/uploaded/i3/341880047/O1CN01cy7Dx71CDZ9fVIaru_!!0-saturn_solar.jpg_200x200.jpg_.webp" alt="">
+       <img src="https://gma.alicdn.com/bao/uploaded/i1/17275090/O1CN01dIMK3a1nTGW4S3NVd_!!0-saturn_solar.jpg_200x200.jpg_.webp" alt="">
+       <img src="https://gma.alicdn.com/bao/uploaded/i2/1381306062445060750/TB2pGpaw5RnpuFjSZFCXXX2DXXa_!!0-saturn_solar.jpg_200x200.jpg_.webp" alt="">
      </div>
    </div>
      
@@ -93,11 +97,7 @@ export default {
   padding: 20rpx 16rpx;
   box-sizing: border-box;
   background-color: #eb4450;
-  position: fixed;
-  top: 0;
-  left: 0;
- z-index: 1000;
-
+  position: relative;
   input {
     padding: 0px 10rpx;
     height: 60rpx;
@@ -118,9 +118,7 @@ export default {
   }
 }
 .lunbo{
-  margin-top: 100rpx;
   width: 100%;
-  height: 340rpx;
   image{
     width: 100%;
     height: 340rpx;

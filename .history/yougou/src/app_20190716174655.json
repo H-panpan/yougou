@@ -12,7 +12,6 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "selectedColor":"#eb4450",
     "list": [
       {
         "pagePath": "pages/home/main",
@@ -29,14 +28,14 @@
       {
         "pagePath": "pages/cart/main",
         "text": "购物车",
-        "iconPath":"static/images/icon/icon_cart@3x.png",
+        "iconPath":"static/images/icon/icon_cart_active@3x.png",
         "selectedIconPath":"static/images/icon/icon_cart_active@3x.png"
       }
       ,
       {
         "pagePath": "pages/mine/main",
         "text": "我的",
-        "iconPath":"static/images/icon/icon_me@3x.png",
+        "iconPath":"static/images/icon/icon_cart@3x.png",
         "selectedIconPath":"static/images/icon/icon_me_active@3x.png"
       }
     ]

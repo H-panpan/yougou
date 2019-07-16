@@ -93,11 +93,7 @@ export default {
   padding: 20rpx 16rpx;
   box-sizing: border-box;
   background-color: #eb4450;
-  position: fixed;
-  top: 0;
-  left: 0;
- z-index: 1000;
-
+  position: relative;
   input {
     padding: 0px 10rpx;
     height: 60rpx;
@@ -118,7 +114,6 @@ export default {
   }
 }
 .lunbo{
-  margin-top: 100rpx;
   width: 100%;
   height: 340rpx;
   image{

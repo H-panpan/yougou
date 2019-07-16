@@ -25,7 +25,7 @@
    <div class='commodity' v-for="(item,index) in commList" :key="index">
      <img class='new-house' :src="item.floor_title.image_src" alt=""><span class="house-text">{{item.floor_title.name}}</span>
      <div class='commlist'>
-       <img  v-for="(item1,index1) in item.product_list" :key="index1" :src="item1.image_src" alt="">
+       <img :src="item.product_list.image_src" alt="">
      </div>
    </div>
      
@@ -93,11 +93,7 @@ export default {
   padding: 20rpx 16rpx;
   box-sizing: border-box;
   background-color: #eb4450;
-  position: fixed;
-  top: 0;
-  left: 0;
- z-index: 1000;
-
+  position: relative;
   input {
     padding: 0px 10rpx;
     height: 60rpx;
@@ -118,9 +114,7 @@ export default {
   }
 }
 .lunbo{
-  margin-top: 100rpx;
   width: 100%;
-  height: 340rpx;
   image{
     width: 100%;
     height: 340rpx;
