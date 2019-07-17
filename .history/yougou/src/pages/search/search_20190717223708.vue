@@ -1,19 +1,18 @@
 <template>
 <div>
   <!-- 头部搜索 -->
-  <div class="myHead" :style="{position: position}">
-   <div class="head-search" >
+   <div class="head-search" :style="{position:position}">
       <input v-model="query" type="search" />
        <icon class='soushuo' type="search" size="20px"/>
-    </div>
- <!-- 排序 -->
+        <!-- 排序 -->
  <div class="sort">
    <div @click="selecttext(index)" class='sorttext' :class="{active:selectsort===index}" v-for="(item,index) in sortList" :key="index">
      {{item}}
     </div>
     
  </div>
- </div>
+    </div>
+
  <!-- 商品列表展示 -->
  <div class="goodsList" v-for="(item1,index1) in articlelist" :key="index1" :style="{marginTop:marginTop}">
       <div class="left">

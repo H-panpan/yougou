@@ -1,18 +1,14 @@
-.myHead {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
-}
-
 .head-search {
   width: 100%;
   height: 100rpx;
   padding: 20rpx 16rpx;
   box-sizing: border-box;
   background-color: #eeeeee;
- 
+  position: fixed;
+  top: 0;
+  left: 0;
+ z-index: 1000;
+
   input {
     padding: 0px 60rpx;
     height: 60rpx;
@@ -29,14 +25,15 @@
 }
 .sort{
   width: 100%;
+  margin-top: 100rpx;
   height: 98rpx;
   border-bottom: 1px solid #dddddd;
   line-height: 100rpx;
   text-align: center;
-  background-color: #fff;
  .sorttext{
  width: 33.333%;
  display: flex;
+
  display: inline-block;
  &.active{
    color: #eb4450;
@@ -62,22 +59,25 @@
     width: 467rpx;
     float: right;
    
-  .word{
+  span{
     line-height: 40rpx;
+    text-overflow: -o-ellipsis-lastline;
     overflow: hidden;
     text-overflow: ellipsis;
-   -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
     display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
   .price{
-    margin-top: 70rpx;
+    margin-top: 85rpx;
+    font-size: 40rpx;
     color: #eb4450;
 
    
     span{
-    display: inline-block;
-    font-size: 40rpx;
+    
+    font-size: 50rpx;
     }
   }
   }

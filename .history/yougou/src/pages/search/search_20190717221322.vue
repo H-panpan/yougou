@@ -1,8 +1,7 @@
 <template>
 <div>
   <!-- 头部搜索 -->
-  <div class="myHead" :style="{position: position}">
-   <div class="head-search" >
+   <div class="head-search">
       <input v-model="query" type="search" />
        <icon class='soushuo' type="search" size="20px"/>
     </div>
@@ -13,9 +12,8 @@
     </div>
     
  </div>
- </div>
  <!-- 商品列表展示 -->
- <div class="goodsList" v-for="(item1,index1) in articlelist" :key="index1" :style="{marginTop:marginTop}">
+ <div class="goodsList" v-for="(item1,index1) in articlelist" :key="index1">
       <div class="left">
         <img :src="item1.goods_small_logo" alt="">
       </div>
@@ -43,9 +41,7 @@ export default {
       pagesize:10,
       pagenum:1,
       total:-1,
-      isEnd:true,
-      position:"static",
-      marginTop:"0px"
+      isEnd:true
 
     }
   },
@@ -97,26 +93,7 @@ export default {
   onReachBottom(){
    this.pagenum++
    this.getarticlelist()
-  },
-  //下拉刷新
-  onPullDownRefresh(){
-    this.pagenum=1
-    this.articlelist=[]
-    this.total=-1
-     this.getarticlelist()
-     wx.stopPullDownRefresh()
-  },
-  //当页面滚动时执行
-  onPageScroll(scroll){
-    if(scroll.scrollTop===0){
-      this.position="static"
-      this.marginTop="0px"
-    }else{
-      this.position="fixed"
-       this.marginTop="100rpx"
-    }
   }
-
 }
 </script>
 

@@ -1,21 +1,19 @@
 <template>
 <div>
   <!-- 头部搜索 -->
-  <div class="myHead" :style="{position: position}">
-   <div class="head-search" >
+   <div class="head-search" :style="{position:position}">
       <input v-model="query" type="search" />
        <icon class='soushuo' type="search" size="20px"/>
     </div>
  <!-- 排序 -->
- <div class="sort">
+ <div class="sort" :style="{marginTop:marginTop}">
    <div @click="selecttext(index)" class='sorttext' :class="{active:selectsort===index}" v-for="(item,index) in sortList" :key="index">
      {{item}}
     </div>
     
  </div>
- </div>
  <!-- 商品列表展示 -->
- <div class="goodsList" v-for="(item1,index1) in articlelist" :key="index1" :style="{marginTop:marginTop}">
+ <div class="goodsList" v-for="(item1,index1) in articlelist" :key="index1">
       <div class="left">
         <img :src="item1.goods_small_logo" alt="">
       </div>
@@ -104,7 +102,6 @@ export default {
     this.articlelist=[]
     this.total=-1
      this.getarticlelist()
-     wx.stopPullDownRefresh()
   },
   //当页面滚动时执行
   onPageScroll(scroll){
@@ -113,7 +110,7 @@ export default {
       this.marginTop="0px"
     }else{
       this.position="fixed"
-       this.marginTop="100rpx"
+       this.marginTop="100px"
     }
   }
 

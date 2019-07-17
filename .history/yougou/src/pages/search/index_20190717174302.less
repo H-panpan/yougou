@@ -1,18 +1,14 @@
-.myHead {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
-}
-
 .head-search {
   width: 100%;
   height: 100rpx;
   padding: 20rpx 16rpx;
   box-sizing: border-box;
   background-color: #eeeeee;
- 
+  position: fixed;
+  top: 0;
+  left: 0;
+ z-index: 1000;
+
   input {
     padding: 0px 60rpx;
     height: 60rpx;
@@ -29,14 +25,15 @@
 }
 .sort{
   width: 100%;
+  margin-top: 100rpx;
   height: 98rpx;
   border-bottom: 1px solid #dddddd;
   line-height: 100rpx;
   text-align: center;
-  background-color: #fff;
  .sorttext{
  width: 33.333%;
  display: flex;
+
  display: inline-block;
  &.active{
    color: #eb4450;
@@ -51,41 +48,13 @@
   padding: 30rpx 20rpx;
   box-sizing: border-box;
   .left{
-    width: 202rpx;
-    float: left;
     img{
       width: 202rpx;
-     height: 199rpx;
+      height: 199rpx;
+      float: left;
     }
   }
   .right{
-    width: 467rpx;
     float: right;
-   
-  .word{
-    line-height: 40rpx;
-    overflow: hidden;
-    text-overflow: ellipsis;
-   -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
   }
-  .price{
-    margin-top: 70rpx;
-    color: #eb4450;
-
-   
-    span{
-    display: inline-block;
-    font-size: 40rpx;
-    }
-  }
-  }
-
-  
-}
-.goosbottom{
-  text-align: center;
-  padding: 40rpx;
-  color: #eee;
 }

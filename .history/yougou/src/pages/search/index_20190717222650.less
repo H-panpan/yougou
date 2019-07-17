@@ -1,18 +1,15 @@
-.myHead {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
-}
-
 .head-search {
   width: 100%;
   height: 100rpx;
   padding: 20rpx 16rpx;
   box-sizing: border-box;
   background-color: #eeeeee;
- 
+  position: fixed;
+  top: 0;
+  left: 0;
+ z-index: 1000;
+
+
   input {
     padding: 0px 60rpx;
     height: 60rpx;
@@ -29,14 +26,15 @@
 }
 .sort{
   width: 100%;
+  margin-top: 100rpx;
   height: 98rpx;
   border-bottom: 1px solid #dddddd;
   line-height: 100rpx;
   text-align: center;
-  background-color: #fff;
  .sorttext{
  width: 33.333%;
  display: flex;
+
  display: inline-block;
  &.active{
    color: #eb4450;
