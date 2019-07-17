@@ -17,13 +17,11 @@
           </div>
           <div class="showList">
             <div class="rishow" v-for="(item2,index2) in item1.children" :key="index2">
-              <a :href="'/pages/search/main?query='+item2.cat_name">
-                <img
+              <img
                 :src="'https://autumnfish.cn/wx/'+item2.cat_icon"
                 alt
               />
               <p>{{item2.cat_name}}</p>
-              </a>
             </div>
                
           </div>

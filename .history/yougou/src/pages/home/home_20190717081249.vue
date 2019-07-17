@@ -42,7 +42,7 @@ export default {
     }
   },
   components: {
-    topHead
+    tohead
   },
   methods: {
  async getlunbolist(){

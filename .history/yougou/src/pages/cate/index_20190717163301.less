@@ -1,0 +1,76 @@
+.goods{
+  width: 100%;
+  padding: 100rpx 16rpx 0rpx 0rpx;
+  box-sizing: border-box;
+  .proList{
+    width: 200rpx;
+    height: 1500rpx;
+    overflow: auto;
+    float: left;
+    ul{
+      line-height: 100rpx;
+      text-align: center;
+     
+      li{
+        width: 100%;
+        height: 100rpx;
+        background-color: #f4f4f4;
+        &.active{
+          color: #eb4450;
+          position: relative;
+          background-color: #fff;
+         &:before{
+            content: "";
+            width: 10rpx;
+            height: 60rpx;
+            background-color: #eb4450;
+            position: absolute;
+            top: 20rpx;
+            left: 0rpx;
+            
+          }
+        }
+      }
+    }
+  }
+  .braList{
+    float: right;
+    width: 520rpx;
+    margin-top: 20rpx;
+    height: 1500rpx;
+      overflow: auto;
+    img{
+      width: 100%;
+      height: 180rpx;
+    }
+    .barshow{
+      .bartitle{
+        text-align: center;
+        color: #d9d9d9;
+        line-height: 111rpx;
+        span{
+         color: #333333;
+          padding: 0rpx 30rpx;
+        }
+      }
+      .showList{
+        width: 450rpx;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        
+        .rishow{
+          width: 33.333%;
+          img{
+            width: 100rpx;
+            height: 60rpx;
+          }
+          p{
+            font-size: 24rpx;
+            text-align: center;
+          }
+        }
+      } 
+    }
+  }
+}

@@ -9,21 +9,19 @@
         </ul>
       </div>
       <div class="braList">
-        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563363351005&di=4da359ebcec08770afd76f6bd352d249&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ba8e57c550840000012e7e42cf21.jpg%401280w_1l_2o_100sh.png" alt />
+        <img src="https://gtms01.alicdn.com/tps/i1/TB12EhzIXXXXXbMXpXXDgwcQVXX-375-130.jpg" alt />
         <div class="barshow" v-for="(item1,index1) in contentList" :key="index1" >
           <div class="bartitle">
             /
             <span>{{item1.cat_name}}</span>/
           </div>
           <div class="showList">
-            <div class="rishow" v-for="(item2,index2) in item1.children" :key="index2">
-              <a :href="'/pages/search/main?query='+item2.cat_name">
-                <img
-                :src="'https://autumnfish.cn/wx/'+item2.cat_icon"
+            <div class="rishow">
+              <img
+                src="https://img.alicdn.com/bao/uploaded/i4/10009019440869076/T1hpk5XglXXXXXXXXX_!!0-item_pic.jpg_100x100q90.jpg_.webp"
                 alt
               />
-              <p>{{item2.cat_name}}</p>
-              </a>
+              <p>曲面电视</p>
             </div>
                
           </div>
@@ -68,7 +66,6 @@ export default {
       let{message,meta}=res.data
       if(meta.status===200){
         this.proLists=message
-        this.contentList=this.proLists[this.selectpro].children
       }
       // 结束加载
       wx.hideLoading()

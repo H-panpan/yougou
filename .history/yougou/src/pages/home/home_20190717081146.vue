@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 头部搜索 -->
-    <topHead />
+    <tohead />
     <!-- 轮播 -->
     <swiper class='lunbo' indicator-dots  autoplay interval="3000" duration="300" indicator-active-color='#fff'>
   <block>
@@ -30,9 +30,8 @@
 </template>
 
 <script>
-import topHead from "../../components/tophead.vue"
 import wxrequest from "../../utils/js/wxrequest.js"
-
+import tohead from "../../components/tohead.vue"
 export default {
   data () {
     return {
@@ -42,7 +41,7 @@ export default {
     }
   },
   components: {
-    topHead
+    tohead
   },
   methods: {
  async getlunbolist(){

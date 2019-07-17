@@ -30,9 +30,8 @@
 </template>
 
 <script>
-import topHead from "../../components/tophead.vue"
 import wxrequest from "../../utils/js/wxrequest.js"
-
+import topHead from "../../components/tophead.vue"
 export default {
   data () {
     return {
@@ -42,7 +41,7 @@ export default {
     }
   },
   components: {
-    topHead
+    tohead
   },
   methods: {
  async getlunbolist(){

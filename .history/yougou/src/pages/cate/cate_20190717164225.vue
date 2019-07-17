@@ -9,7 +9,7 @@
         </ul>
       </div>
       <div class="braList">
-        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563363351005&di=4da359ebcec08770afd76f6bd352d249&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ba8e57c550840000012e7e42cf21.jpg%401280w_1l_2o_100sh.png" alt />
+        <img src="https://gtms01.alicdn.com/tps/i1/TB12EhzIXXXXXbMXpXXDgwcQVXX-375-130.jpg" alt />
         <div class="barshow" v-for="(item1,index1) in contentList" :key="index1" >
           <div class="bartitle">
             /
@@ -17,13 +17,11 @@
           </div>
           <div class="showList">
             <div class="rishow" v-for="(item2,index2) in item1.children" :key="index2">
-              <a :href="'/pages/search/main?query='+item2.cat_name">
-                <img
+              <img
                 :src="'https://autumnfish.cn/wx/'+item2.cat_icon"
                 alt
               />
               <p>{{item2.cat_name}}</p>
-              </a>
             </div>
                
           </div>
