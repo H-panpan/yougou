@@ -10,13 +10,7 @@
 
 <script>
 export default {
-methods: {
-  tosearch(){
-    wx.navigateTo({
-      url:"/pages/search/main"
-    })
-  }
-}
+
 }
 </script>
 
@@ -37,7 +31,6 @@ methods: {
     height: 60rpx;
     background-color: #fff;
     border-radius: 5px;
-    text-align: center;
   }
   span {
     position: absolute;

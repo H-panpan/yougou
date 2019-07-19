@@ -37,7 +37,6 @@ methods: {
     height: 60rpx;
     background-color: #fff;
     border-radius: 5px;
-    text-align: center;
   }
   span {
     position: absolute;

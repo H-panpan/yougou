@@ -1,24 +1,17 @@
 <template>
   <div class="head-search">
-    <div @click="tosearch">
-      <input type="search" />
+   <input type="search" />
       <span>搜索</span>
       <icon class='soushuo' type="search" size="20px"/>
-      </div>
     </div>
 </template>
 
 <script>
 export default {
-methods: {
-  tosearch(){
-    wx.navigateTo({
-      url:"/pages/search/main"
-    })
-  }
-}
+
 }
 </script>
+
 
 <style scoped lang="less">
 .head-search {
@@ -26,7 +19,7 @@ methods: {
   height: 100rpx;
   padding: 20rpx 16rpx;
   box-sizing: border-box;
-  background-color: #eb4450;
+  background-color: #eeeeee;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,15 +34,16 @@ methods: {
   }
   span {
     position: absolute;
-    left: 380rpx;
+    left: 50rpx;
     top:28rpx;
     color: #bbbbbb;
   }
   .soushuo{
     position: absolute;
     top:30rpx;
-    left:330rpx;
+    left:30rpx;
 
   }
 }
 </style>
+
